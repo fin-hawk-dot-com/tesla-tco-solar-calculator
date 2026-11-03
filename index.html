@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tesla 5-Year TCO, Solar ROI &amp; Free Month FSD Referral Calculator | Fin-Hawk</title>
+  <meta name="description" content="Interactive Tesla Model Y, Model 3 &amp; Cybertruck 5-Year Total Cost of Ownership calculator. Get a free month of Full Self-Driving (Supervised) or $400 off Tesla Solar."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Tesla 5-Year TCO &amp; Free Month FSD (Supervised) Referral Hub"/>
+  <meta property="og:description" content="Get a free month of Full Self-Driving (Supervised) on Tesla vehicles or $400 off Tesla Solar + calculate your 5-year EV fuel and tax credit savings."/>
+  <meta property="og:url" content="https://fin-hawk-dot-com.github.io/tesla-tco-solar-calculator/"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Fin-Hawk Tesla TCO & Solar Referral Calculator",
+    "url": "https://fin-hawk-dot-com.github.io/tesla-tco-solar-calculator/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "description": "Interactive 5-year EV Total Cost of Ownership and Tesla Solar ROI calculator with verified Tesla referral perks (code: justin929372)."
+  }
+  </script>
+
+  <link rel="canonical" href="https://fin-hawk-dot-com.github.io/tesla-tco-solar-calculator/"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I get a free month of Tesla Full Self-Driving (Supervised)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ordering a qualifying new Tesla Model 3, Model Y, Cybertruck, Model S, or Model X through a verified Tesla referral link (https://tesla.com/get-app/referral?code=justin929372) automatically applies 1 free month of Full Self-Driving (Supervised) to your vehicle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get $400 off Tesla Solar and Powerwall 3?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using a verified Tesla Energy referral link (https://ts.la/justin929372) before submitting your Tesla Solar panels or Solar Roof order grants a $400 buyer referral discount on top of the 30% Federal Residential Clean Energy Credit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to charge a Tesla Model Y at home vs gas over 5 years?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At 12,000 miles per year and an $0.11/kWh off-peak Time-of-Use utility rate (with 88% Level 2 charger efficiency), a Tesla Model Y Long Range (275 Wh/mi) costs approximately $412/year in electricity compared to $1,685/year for a 26 MPG gas SUV at $3.65/gal—saving roughly $6,360 in fuel plus ~$2,700 in scheduled maintenance over 5 years."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen p-4 sm:p-8 font-sans">
+  <div class="max-w-5xl mx-auto space-y-8">
+
+    <!-- Top Nav -->
+    <header class="flex items-center justify-between pb-4 border-b border-slate-800">
+      <a href="https://github.com/fin-hawk-dot-com/tesla-tco-solar-calculator" class="text-sm font-bold text-white tracking-wide hover:text-amber-400">
+        ⚡ OPEN-SOURCE TESLA TCO &amp; SOLAR CALCULATOR
+      </a>
+      <div class="flex items-center gap-3 text-xs font-mono">
+        <a href="https://tesla.com/get-app/referral?code=justin929372" rel="sponsored nofollow"
+           class="px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500/30">
+          Free Month FSD Link &rarr;
+        </a>
+        <a href="https://ts.la/justin929372" rel="sponsored nofollow"
+           class="px-3 py-1.5 rounded-lg bg-sky-500/20 text-sky-300 border border-sky-500/40 hover:bg-sky-500/30">
+          $400 Off Solar Link &rarr;
+        </a>
+      </div>
+    </header>
+
+    <!-- FTC & Tesla Referral Disclosure -->
+    <aside class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs text-slate-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div>
+        <strong class="text-amber-400">FTC &amp; Tesla Referral Disclosure:</strong>
+        Get a <strong>free month of Full Self-Driving (Supervised)</strong> when you use
+        <a href="https://tesla.com/get-app/referral?code=justin929372" rel="sponsored nofollow" class="text-amber-300 underline">https://tesla.com/get-app/referral?code=justin929372</a>,
+        or get <strong>$400 off your Tesla Solar purchase</strong> via
+        <a href="https://ts.la/justin929372" rel="sponsored nofollow" class="text-sky-300 underline">https://ts.la/justin929372</a>.
+        All referral links carry <code>rel="sponsored nofollow"</code>.
+      </div>
+      <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-mono shrink-0">
+        Verified Code: justin929372
+      </span>
+    </aside>
+
+    <!-- Dual Referral Offer Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-amber-500/15 via-slate-900 to-slate-900 border border-amber-500/40 flex flex-col justify-between space-y-4">
+        <div>
+          <span class="text-xs font-mono text-amber-400 uppercase">Vehicle &amp; App Referral Perk</span>
+          <h2 class="text-xl font-extrabold text-white mt-1">Get a Free Month of Full Self-Driving (Supervised)</h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-2">
+            Use our verified referral link when ordering a qualifying Tesla Model 3, Model Y, Cybertruck, Model S, or Model X.
+          </p>
+        </div>
+        <a href="https://tesla.com/get-app/referral?code=justin929372" rel="sponsored nofollow"
+           class="w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm text-center block shadow-lg shadow-amber-500/20">
+          Claim Free Month of FSD (Supervised) &rarr;
+        </a>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-sky-500/15 via-slate-900 to-slate-900 border border-sky-500/40 flex flex-col justify-between space-y-4">
+        <div>
+          <span class="text-xs font-mono text-sky-400 uppercase">Tesla Energy &amp; Solar Perk</span>
+          <h2 class="text-xl font-extrabold text-white mt-1">Get $400 Off Your Tesla Solar Purchase</h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-2">
+            Stack a $400 referral discount on top of the 30% Federal Residential Clean Energy Credit for Tesla Solar &amp; Powerwall 3.
+          </p>
+        </div>
+        <a href="https://ts.la/justin929372" rel="sponsored nofollow"
+           class="w-full py-3 px-4 rounded-xl bg-sky-400 hover:bg-sky-300 text-slate-950 font-extrabold text-sm text-center block shadow-lg shadow-sky-400/20">
+          Claim $400 Off Tesla Solar (ts.la/justin929372) &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Interactive 5-Year TCO Calculator -->
+    <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/80 border border-slate-800 shadow-2xl space-y-6">
+      <div>
+        <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">Interactive EV Savings Calculator</span>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Tesla 5-Year Total Cost of Ownership (TCO) Estimator</h1>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-6 space-y-4 bg-slate-950/70 p-5 rounded-xl border border-slate-800">
+          <div>
+            <label class="block text-xs font-mono text-slate-400 mb-1">Select Tesla Model</label>
+            <select id="model-select" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+              <option value="model-y" data-msrp="44990" data-wh="275" data-mpg="26" data-fed="7500" data-path="modely/design">Tesla Model Y Long Range ($44,990)</option>
+              <option value="model-3" data-msrp="42490" data-wh="250" data-mpg="30" data-fed="7500" data-path="model3/design">Tesla Model 3 Long Range ($42,490)</option>
+              <option value="cybertruck" data-msrp="79990" data-wh="410" data-mpg="18" data-fed="7500" data-path="cybertruck/design">Tesla Cybertruck AWD ($79,990)</option>
+              <option value="model-s" data-msrp="74990" data-wh="280" data-mpg="22" data-fed="0" data-path="models/design">Tesla Model S AWD ($74,990)</option>
+              <option value="model-x" data-msrp="79990" data-wh="330" data-mpg="20" data-fed="0" data-path="modelx/design">Tesla Model X AWD ($79,990)</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono mb-1">
+              <span class="text-slate-400">Annual Miles Driven</span>
+              <span id="miles-val" class="text-amber-400 font-bold">12,000 mi/yr</span>
+            </div>
+            <input id="miles-input" type="range" min="5000" max="30000" step="1000" value="12000" class="w-full accent-amber-500"/>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono mb-1">
+              <span class="text-slate-400">Home Off-Peak Electricity Rate ($/kWh)</span>
+              <span id="elec-val" class="text-sky-400 font-bold">$0.11 / kWh</span>
+            </div>
+            <input id="elec-input" type="range" min="0.05" max="0.35" step="0.01" value="0.11" class="w-full accent-sky-400"/>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono mb-1">
+              <span class="text-slate-400">Local Gas Price ($/Gallon)</span>
+              <span id="gas-val" class="text-rose-400 font-bold">$3.65 / gal</span>
+            </div>
+            <input id="gas-input" type="range" min="2.25" max="6.50" step="0.05" value="3.65" class="w-full accent-rose-400"/>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono mb-1">
+              <span class="text-slate-400">State / Utility EV Rebate ($)</span>
+              <span id="state-val" class="text-emerald-400 font-bold">$0</span>
+            </div>
+            <input id="state-input" type="range" min="0" max="7500" step="250" value="0" class="w-full accent-emerald-400"/>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 flex flex-col justify-between bg-slate-950/90 p-5 rounded-xl border border-slate-800 space-y-4">
+          <div class="grid grid-cols-2 gap-3">
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-xs font-mono text-slate-400 block">Base MSRP</span>
+              <span id="out-msrp" class="text-xl font-bold text-white">$44,990</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
+              <span class="text-xs font-mono text-emerald-300 block">Referral Link Bonus</span>
+              <span class="text-base font-bold text-emerald-400">Free Month FSD ($99 val)</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-xs font-mono text-slate-400 block">Federal + State Credits</span>
+              <span id="out-credits" class="text-xl font-bold text-sky-400">-$7,500</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-xs font-mono text-slate-400 block">5-Yr Fuel + Maint Saved</span>
+              <span id="out-fuel" class="text-xl font-bold text-amber-400">-$8,825</span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-gradient-to-r from-amber-500/15 to-sky-500/15 border border-amber-500/40 flex items-center justify-between">
+            <div>
+              <span class="text-xs font-mono text-amber-300 uppercase block">5-Year Net Effective Cost</span>
+              <span id="out-net" class="text-2xl sm:text-3xl font-extrabold text-white">$28,566</span>
+            </div>
+            <div class="text-right">
+              <span class="text-xs font-mono text-slate-400 block">Day-1 Effective Price</span>
+              <span id="out-day1" class="text-lg font-bold text-emerald-400">$37,391</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a href="https://tesla.com/get-app/referral?code=justin929372" rel="sponsored nofollow"
+               class="py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm text-center block">
+              Claim Free Month FSD Referral &rarr;
+            </a>
+            <a id="design-studio-cta" href="https://www.tesla.com/modely/design?referral=justin929372&code=justin929372&redirect=no#overview" rel="sponsored nofollow"
+               class="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs sm:text-sm text-center block border border-slate-700">
+              Open Tesla Design Studio &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const modelSelect = document.getElementById('model-select');
+    const milesInput = document.getElementById('miles-input');
+    const elecInput = document.getElementById('elec-input');
+    const gasInput = document.getElementById('gas-input');
+    const stateInput = document.getElementById('state-input');
+
+    function recalc() {
+      const opt = modelSelect.options[modelSelect.selectedIndex];
+      const msrp = parseFloat(opt.getAttribute('data-msrp'));
+      const whPerMile = parseFloat(opt.getAttribute('data-wh'));
+      const iceMpg = parseFloat(opt.getAttribute('data-mpg'));
+      const fedCredit = parseFloat(opt.getAttribute('data-fed'));
+      const designPath = opt.getAttribute('data-path');
+
+      const miles = parseInt(milesInput.value, 10);
+      const elec = parseFloat(elecInput.value);
+      const gas = parseFloat(gasInput.value);
+      const stateRebate = parseFloat(stateInput.value);
+
+      document.getElementById('miles-val').textContent = miles.toLocaleString() + ' mi/yr';
+      document.getElementById('elec-val').textContent = '$' + elec.toFixed(2) + ' / kWh';
+      document.getElementById('gas-val').textContent = '$' + gas.toFixed(2) + ' / gal';
+      document.getElementById('state-val').textContent = '$' + stateRebate.toLocaleString();
+
+      const annualKwh = (miles * (whPerMile / 1000.0)) / 0.88;
+      const annualEvCost = annualKwh * elec;
+      const annualGasCost = (miles / iceMpg) * gas;
+      const fiveYrFuelSaved = Math.max(0, (annualGasCost - annualEvCost) * 5);
+      const fiveYrMaintSaved = miles * 0.045 * 5;
+      const totalFiveYrOpsSaved = fiveYrFuelSaved + fiveYrMaintSaved;
+
+      const totalCredits = fedCredit + stateRebate + 99;
+      const dayOnePrice = Math.max(0, msrp - totalCredits);
+      const netFiveYr = Math.max(0, dayOnePrice - totalFiveYrOpsSaved);
+
+      document.getElementById('out-msrp').textContent = '$' + Math.round(msrp).toLocaleString();
+      document.getElementById('out-credits').textContent = '-$' + Math.round(fedCredit + stateRebate).toLocaleString();
+      document.getElementById('out-fuel').textContent = '-$' + Math.round(totalFiveYrOpsSaved).toLocaleString();
+      document.getElementById('out-day1').textContent = '$' + Math.round(dayOnePrice).toLocaleString();
+      document.getElementById('out-net').textContent = '$' + Math.round(netFiveYr).toLocaleString();
+      document.getElementById('design-studio-cta').href =
+        'https://www.tesla.com/' + designPath + '?referral=justin929372&code=justin929372&redirect=no#overview';
+    }
+
+    [modelSelect, milesInput, elecInput, gasInput, stateInput].forEach(el => {
+      el.addEventListener('input', recalc);
+      el.addEventListener('change', recalc);
+    });
+    recalc();
+  </script>
+</body>
+</html>
